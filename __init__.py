@@ -11,8 +11,8 @@ def create_app():
     app = Flask(__name__)
 
     # 블루프린트
-    from .views import main_views, policynews
+    from .views import main_views, #policynews
     app.register_blueprint(main_views.bp)
-    app.register_blueprint(policynews.bp)
+    #app.register_blueprint(policynews.bp)
 
     return app
